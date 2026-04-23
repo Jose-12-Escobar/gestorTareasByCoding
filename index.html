@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mi-primera-app</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Lista de Tareas</h1>
+      </header>
+      <main>
+        <form id="task-form"><input type="text" id="task-title" placeholder="¿Qué quieres hacer hoy?" autocomplete="off" autofocus /><button type="submit">Añadir</button></form>
+        
+        <div class="controls">
+          <input type="search" id="search-input" placeholder="Buscar tareas..." autocomplete="off" />
+          <div class="filters">
+            <button data-filter="all" class="active">Todas</button>
+            <button data-filter="pending">Pendientes</button>
+            <button data-filter="completed">Completadas</button>
+          </div>
+        </div>
+
+        <ul id="task-list"></ul>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
